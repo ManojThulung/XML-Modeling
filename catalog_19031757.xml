@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="catalog_19031757.css"?>
+<!DOCTYPE Music_store SYSTEM "catalog_19031757.dtd">
+<Music_store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19031757.xsd">
+	<Name>Mood Music Store</Name>
+	<Address>Itahari 2, Tarahara</Address>
+	<Contact_number>
+		<Telephone_number>025475880</Telephone_number>
+		<Phone_number>9824337791</Phone_number>
+	</Contact_number>
+	<Email>musico@gmail.com</Email>
+	<Website_address>www.musico.com</Website_address>
+	<Logo></Logo>
+	<Songs>
+		<Song SongID="Song01" GenreType="Lok Geet" SongLength="05:13">
+			<Title>Orali Lageko</Title>
+			<Language>Nepali</Language>
+			<Album>Dhakal Samudhur Sanjha</Album>
+			<Solo_and_duet>
+				<Producer>Ananda Adhikari</Producer>
+				<Writer>Ananda Adhikari</Writer>
+			</Solo_and_duet>
+			<Vocal>
+				<Singer SingerID="Sin01" Gender="Male">Ram Krishna Dhakal</Singer>
+			</Vocal>
+			<Released_year>January, 1998</Released_year>
+		</Song>
+		<Song SongID="song02" GenreType="Pop, Lok Geet" SongLength="05:54">
+			<Title>Kutu Ma Kutu</Title>
+			<Language>Nepali</Language>
+			<Playback_Movie>Dui Rupaiya</Playback_Movie>
+			<Solo_and_duet>
+				<Director>Asim Shah</Director>
+				<Producer>G21 Production</Producer>
+				<Writer>Rajan Raj Shiwakoti</Writer>
+			</Solo_and_duet>
+			<Vocal>
+				<Singer SingerID="Sin02" Gender="Female">Melina Rai</Singer>
+				<Singer SingerID="Sin03" Gender="Male">Rajan Ishan</Singer>
+			</Vocal>
+			<Released_year>May, 2017 (Nepal)</Released_year>
+			<Nominations>
+				<Nomination>People's choice Award</Nomination>
+				<Nomination>Best Playback Singer</Nomination>
+				<Nomination Status="Won">Best Music Composer award</Nomination>
+			</Nominations>
+		</Song>
+		<Song SongID="Song03" GenreType="Pop, Acoustic music" SongLength="4:22">
+			<Title>Tum Hi Ho</Title>
+			<Language>Hindi</Language>
+			<Playback_Movie>Aashiqui 2</Playback_Movie>
+			<Solo_and_duet>
+				<Producer>Bhushan Kumar</Producer>
+				<Writer>Mithoon</Writer>
+			</Solo_and_duet>
+			<Vocal>
+				<Singer SingerID="Sin04" Gender="Male">Arijit Singh</Singer>
+			</Vocal>
+			<Released_year>March 16, 2013 (India)</Released_year>
+			<Nominations>
+				<Nomination>Filmfare Awards 2014, Best Lyricist</Nomination>
+				<Nomination Status="Won">Big Star entertainment Awards 2013, Most Entertaining song</Nomination>
+				<Nomination Status="Won">ETC Bollywood Business Awards 2014, Song of the Year</Nomination>
+			</Nominations>
+		</Song>
+		<Song SongID="Song04" GenreType="Metal, Rock" SongLength="">
+			<Title>Sweet Child O' Mine</Title>
+			<Language>English</Language>
+			<Album>Appetite for Destruction</Album>
+			<Band>
+				<Artist>Guns N' Roses</Artist>
+			</Band>
+			<Vocal>
+				<Singer SingerID="Sin05" Gender="Male">Axl Rose</Singer>
+			</Vocal>
+			<Released_year>June 21, 1988 (US)</Released_year>
+			<Nominations>
+				<Nomination>VMA 1989, Best Group Video</Nomination>
+				<Nomination Status="Won">VMA 1989, Best Heavy Metal Video</Nomination>
+				<Nomination Status="Won">1989, American Music Award for Favorite Pop/Rock Single</Nomination>
+			</Nominations>
+		</Song>
+		<Song SongID="Song05" GenreType="Pop" SongLength="3:53">
+			<Title>Shape of You</Title>
+			<Language>English</Language>
+			<Album>Divide</Album>
+			<Solo_and_duet>
+				<Producer>Steve Mac</Producer>
+				<Writer>Ed Sheeran</Writer>
+			</Solo_and_duet>
+			<Vocal>
+				<Singer SingerID="Sing06" Gender="Male">Ed Sheeran</Singer>
+			</Vocal>
+			<Released_year>January 6, 2017</Released_year>
+			<Nominations>
+				<Nomination>MTV Europe Music Awards 2017, Best song</Nomination>
+				<Nomination Status="Won">Grammy Award 2018 for Best Pop Solo Performance</Nomination>
+				<Nomination Status="Won">NRJ Music Award 2017 for Most Streamed Song</Nomination>
+			</Nominations>
+		</Song>
+		<Song SongID="Song06" GenreType="Alternative Rock" SongLength="5:21">
+			<Title>21 Guns</Title>
+			<Language>English</Language>
+			<Album>21st Century Breakdown</Album>
+			<Band>
+				<Artist>Green Day</Artist>
+			</Band>
+			<Vocal>
+				<Singer SingerID="Sing07" Gender="Male">Billie Joe Armstrong</Singer>
+			</Vocal>
+			<Released_year>May 25, 2009</Released_year>
+			<Nominations>
+				<Nomination>Grammy Award for Best Rock Song</Nomination>
+				<Nomination>Best Music Film 2014</Nomination>
+				<Nomination Status="Won">Best Rock Album</Nomination>
+				<Nomination Status="Won">MTV Europe Music Awards</Nomination>
+			</Nominations>
+		</Song>
+		<Song SongID="Song07" GenreType="Ballad Soundtrack" SongLength="4:44">
+			<Title>Tujhe Kitna Chahne Lage</Title>
+			<Language>Hindi</Language>
+			<Playback_Movie>Kabir Singh</Playback_Movie>
+			<Solo_and_duet>
+				<Director>Mithoon</Director>
+				<Producer>Godswill Mergulhao</Producer>
+				<Writer>Mithoon</Writer>
+			</Solo_and_duet>
+			<Vocal>
+				<Singer SingerID="Sing04" Gender="Male">Arijit Singh</Singer>
+			</Vocal>
+			<Released_year>May 21, 2019</Released_year>
+			<Nominations>
+				<Nomination>Filmfare Award for Best Lyricist</Nomination>
+				<Nomination Status="Won">Mirchi Music Awards for Critics' Choice Music Composer of the year 2020</Nomination>
+			</Nominations>
+		</Song>
+		<Song SongID="Song08" GenreType="Pop Music, Jazz" SongLength="4:24">
+			<Title>Kale Dai</Title>
+			<Language>Nepali</Language>
+			<Playback_Movie>Parva</Playback_Movie>
+			<Solo_and_duet>
+				<Director>Dinesh Raut</Director>
+				<Producer>NiKita Poudel</Producer>
+				<Writer>Dinesh Raut</Writer>
+			</Solo_and_duet>
+			<Vocal>
+				<Singer SingerID="Sing08" Gender="Female">Meena Niraula</Singer>
+				<Singer SingerID="Sing09" Gender="Male">Nischal Basnet</Singer>
+			</Vocal>
+			<Released_year>January 17, 2017</Released_year>
+		</Song>
+		<Song SongID="Song09" GenreType="Electropop, Pop" SongLength="4:13">
+			<Title>Runaway</Title>
+			<Language>English</Language>
+			<Album>All my demons greeting me as a friend</Album>
+			<Playback_Movie></Playback_Movie>
+			<Solo_and_duet>
+				<Producer>Odd Martin Skalnes</Producer>
+				<Writer>Aurora</Writer>
+			</Solo_and_duet>
+			<Vocal>
+				<Singer SingerID="Sing10" Gender="Female">Aurora</Singer>
+			</Vocal>
+			<Released_year>February 7, 2015</Released_year>
+		</Song>
+		<Song SongID="Song10" GenreType="Look geet, Acoustic music" SongLength="5:12">
+			<Title>Jati Maya</Title>
+			<Language>Nepali</Language>
+			<Band>
+				<Artist>1974 Ad</Artist>
+			</Band>
+			<Vocal>
+				<Singer SingerID="Sing11" Gender="Male">Arun Thapa</Singer>
+			</Vocal>
+			<Released_year>November 22, 2011</Released_year>
+		</Song>
+	</Songs>
+</Music_store>

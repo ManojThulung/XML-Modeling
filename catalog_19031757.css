@@ -1,0 +1,120 @@
+Music_store {
+	font-family: sans-serif;
+	font-size: 20px;
+	margin-top: 10px;
+	text-align: center;
+	color: rgb(46, 64, 83);
+}
+
+Music_store Name {
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+Logo {
+	background-image: url("MoodMusic.jpg");
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: -125px 0px 0px 30px;
+	background-size: 200px 200px;
+	border-radius: 10px;
+}
+
+Songs {
+	display: block;
+	margin-top: 90px;
+	background-color: rgb(217, 219, 230);
+	padding:5px 0px;
+
+}
+
+Songs Song {
+	display: list-item;
+	list-style-type: decimal;
+	font-family: Georgia;
+	font-size: 16px;
+	color: rgb(76, 76, 112);
+	margin: 20px 50px;
+	border-radius: 15px;
+	padding: 10px 30px;
+	text-align: left;
+	background-color: white;
+	border: 3px solid rgb(46, 64, 83);
+}
+
+Title {
+	display: block;
+	font-weight: bold;
+}
+
+Name, Address, Contact_number, Email, Website_address, Logo{
+	display: block;
+}
+
+Language, Album, Playback_Movie, Solo_and_duet, Band, Vocal, Released_year, Nominations {
+	display: block;
+}
+
+Director, Producer, Writer, Singer {
+	display: block;
+}
+
+Nominations Nomination {
+	display: list-item;
+	list-style-position: inside;
+	list-style-type: circle;
+}
+
+[Status] {
+	color: rgb(183, 149, 11);
+}
+
+Title::before {
+	content: "Title: "
+}
+
+Language::before {
+	content: "Language: "
+}
+
+Playback_Movie::before {
+	content: "Playback Movie: "
+}
+
+Album::before {
+	content: "Album: "
+}
+
+Artist::before {
+	content: "Band: "
+}
+
+Director::before {
+	content: "Director: "
+}
+
+Producer::before {
+	content: "Producer: "
+}
+
+Writer::before {
+	content: "Writer: "
+}
+
+Singer::before {
+	content: "Singer: "
+}
+
+Released_year::before {
+	content: "Released year: "
+}
+
+Nominations::before {
+	content: "Award Nominations: "
+}
+
+[Status]::after { 
+	content: " (Winner)";
+}

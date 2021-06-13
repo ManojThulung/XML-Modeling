@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Music_store">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:group ref="Music_store_group"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Contact_number_type">
+		<xs:sequence>
+			<xs:group ref="Contact_number_group"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Songs_Type">
+		<xs:sequence>
+			<xs:element name="Song" maxOccurs="unbounded" type="Song_type"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Song_type">
+		<xs:sequence>
+			<xs:group ref="Song_group"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="Song_Attribute"/>
+	</xs:complexType>
+
+	<xs:complexType name="Solo_and_duet_type">
+		<xs:sequence>
+			<xs:group ref="Solo_and_duet_group"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Band_type">
+		<xs:sequence>
+			<xs:element name="Artist" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Vocal_type">
+		<xs:sequence>
+			<xs:element name="Singer" maxOccurs="4" type="Singer_type"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Nominations_type">
+		<xs:sequence>
+			<xs:element name="Nomination" maxOccurs="6" type="Nomination_type"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Singer_type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attributeGroup ref="Singer_Attribute"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="Nomination_type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attributeGroup ref="Nomination_Attribute"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="Tele_number_type">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:pattern value="025[0-9]{6}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Phone_number_type">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:pattern value="98[0-9]{8}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Gender_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Male"/>
+			<xs:enumeration value="Female"/>
+			<xs:enumeration value="Other"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Status_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Won"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:group name="Music_store_group">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Address" type="xs:string"/>
+			<xs:element name="Contact_number" type="Contact_number_type"/>
+			<xs:element name="Email" type="xs:string"/>
+			<xs:element name="Website_address" type="xs:string"/>
+			<xs:element name="Logo" type="xs:string"/>
+			<xs:element name="Songs" type="Songs_Type"/>
+		</xs:sequence>
+	</xs:group>
+
+	<xs:group name="Contact_number_group">
+		<xs:sequence>
+			<xs:element name="Telephone_number" type="Tele_number_type"/>
+			<xs:element name="Phone_number" type="Phone_number_type" />
+		</xs:sequence>
+	</xs:group>
+
+	<xs:group name="Song_group">
+		<xs:sequence>
+			<xs:element name="Title" type="xs:string"/>
+			<xs:element name="Language" type="xs:string"/>
+			<xs:element name="Album" type="xs:string" minOccurs="0"/>
+			<xs:element name="Playback_Movie" type="xs:string" minOccurs="0"/>
+			<xs:element name="Solo_and_duet" minOccurs="0" type="Solo_and_duet_type"/>
+			<xs:element name="Band" minOccurs="0" type="Band_type"/>
+			<xs:element name="Vocal" type="Vocal_type"/>
+			<xs:element name="Released_year" type="xs:string"/>
+			<xs:element name="Nominations" minOccurs="0" type="Nominations_type"/>
+		</xs:sequence>
+	</xs:group>
+
+	<xs:group name="Solo_and_duet_group">
+		<xs:sequence>
+			<xs:element name="Director" type="xs:string" minOccurs="0"/>
+			<xs:element name="Producer" type="xs:string"/>
+			<xs:element name="Writer" type="xs:string"/>
+		</xs:sequence>
+	</xs:group>
+
+	<xs:attributeGroup name="Song_Attribute">
+		<xs:attribute name="SongID" type="xs:ID" use="required"/>
+		<xs:attribute name="GenreType" type="xs:string" use="required"/>
+		<xs:attribute name="SongLength" type="xs:string" use="required"/>
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name="Singer_Attribute">
+		<xs:attribute name="SingerID" type="xs:ID" use="required"/>
+		<xs:attribute name="Gender" use="required" type="Gender_type"/>
+	</xs:attributeGroup>
+
+	<xs:attributeGroup name="Nomination_Attribute">
+		<xs:attribute name="Status" use="optional"  type="Status_type"/>
+	</xs:attributeGroup>
+</xs:schema>

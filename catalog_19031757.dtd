@@ -1,0 +1,32 @@
+<!ELEMENT Music_store (Name, Address, Contact_number, Email, Website_address, Logo, Songs)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Contact_number (Telephone_number, Phone_number)>
+<!ELEMENT Telephone_number (#PCDATA)>
+<!ELEMENT Phone_number (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Website_address (#PCDATA)>
+<!ELEMENT Logo (#PCDATA)>
+<!ELEMENT Songs (Song+)>
+<!ELEMENT Song (Title, Language, Album?, Playback_Movie?, Solo_and_duet?, Band?, Vocal, Released_year, Nominations?)>
+<!ATTLIST Song SongID ID #REQUIRED>
+<!ATTLIST Song GenreType CDATA #REQUIRED>
+<!ATTLIST Song SongLength CDATA #REQUIRED>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Language (#PCDATA)>
+<!ELEMENT Album (#PCDATA)>
+<!ELEMENT Playback_Movie (#PCDATA)>
+<!ELEMENT Solo_and_duet (Director?, Producer, Writer)>
+<!ELEMENT Director (#PCDATA)>
+<!ELEMENT Producer (#PCDATA)>
+<!ELEMENT Writer (#PCDATA)>
+<!ELEMENT Band (Artist)>
+<!ELEMENT Artist (#PCDATA)>
+<!ELEMENT Vocal (Singer+)>
+<!ELEMENT Singer (#PCDATA)>
+<!ATTLIST Singer SingerID ID #REQUIRED>
+<!ATTLIST Singer Gender (Male | Female | Other) #REQUIRED>
+<!ELEMENT Released_year (#PCDATA)>
+<!ELEMENT Nominations (Nomination+)>
+<!ELEMENT Nomination (#PCDATA)>
+<!ATTLIST Nomination Status (Won) #IMPLIED>

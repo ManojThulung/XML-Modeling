@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="IIC_College">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="College_name" type="xs:string"/>
+				<xs:element name="Address" type="xs:string"/>
+				<xs:element name="Contact_number">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Telephone_number">
+								<xs:simpleType>
+									<xs:restriction base="xs:positiveInteger">
+										<xs:pattern value="025[0-9]{6}"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Phone_number">
+								<xs:simpleType>
+									<xs:restriction base="xs:positiveInteger">
+										<xs:pattern value="98[0-8]{8}"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Email" type="xs:string"/>
+				<xs:element name="Website_address" type="xs:string"/>
+				<xs:element name="Course">
+					<xs:complexType>
+						<xs:element name="Course" maxOccurs="3">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Course_name" type="xs:string"/>
+									<xs:element name="Specifications">
+										<xs:complexType>
+											<xs:element name="Specification_name">
+												<xs:complexType>
+													<xs:simpleContent>
+														<xs:extension base="xs:string" maxOccurs="3">
+																	<xs:attribute name="Specification_id" type="xs:ID" use="required"/>
+																</xs:extension>
+													</xs:simpleContent>
+												</xs:complexType>
+											</xs:element>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+								<xs:attribute name="Course_id" type="xs:ID" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Students">
+					<xs:complexType>
+						<xs:element name="Student">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="First_name" type="xs:string"/>
+									<xs:element name="Last_name" type="xs:string"/>
+									<xs:element name="Student_address" type="xs:string"/>
+									<xs:element name="Stu_contact_number">
+										<xs:simpleType>
+											<xs:restriction base="xs:positiveInteger">
+												<xs:pattern value="98[0-9]{8}"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:element>
+									<xs:element name="Stu_college_email">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:string">
+													<xs:attribute name="Personal_email" type="xs:string" use="optional"/>
+												</xs:extension>
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="LondonMet_id">
+										<xs:complexType>
+											<xs:simpleContent>
+												<xs:extension base="xs:string">
+													<xs:attribute name="College_id" type="xs:ID" use="required"/>
+												</xs:extension>
+											</xs:simpleContent>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="Date_of_birth" type="xs:string"/>
+								</xs:sequence>
+								<xs:attribute name="Stu_course_id" type="" use="required"/>
+								<xs:attribute name="Stu_specification_id" type="" use="required"/>
+								<xs:attribute name="Gender" use="required">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Male"/>
+											<xs:enumeration value="Female"/>
+											<xs:enumeration value="Other"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+								<xs:attribute name="Join_date" type="" use="required"/>
+								<xs:attribute name="Year" use="required">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Year1"/>
+											<xs:enumeration value="Year2"/>
+											<xs:enumeration value="Year3"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+								<xs:attribute name="Performance" use="required">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Bad"/>
+											<xs:enumeration value="Average"/>
+											<xs:enumeration value="Excellent"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
